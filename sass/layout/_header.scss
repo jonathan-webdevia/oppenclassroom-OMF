@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+header {
+  .header {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    @include flex__center;
+    .header__return {
+      position: absolute;
+      left: 20px;
+    }
+    .header__title {
+      font-family: Shrikhand;
+    }
+  }
+  .position {
+    position: relative;
+    z-index: 1;
+    background-color: $grey;
+    @include flex__center;
+    p {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,1 +1,12 @@
-@import "componants/button.scss";
+@import "utils/variables.scss";
+@import "components/buttons.scss";
+
+@import "base/typography.scss";
+@import "utils/minxins.scss";
+
+@import "components/loader";
+@import "layout/header.scss";
+
+@import "pages/home.scss";
+
+@import "layout/footer.scss";

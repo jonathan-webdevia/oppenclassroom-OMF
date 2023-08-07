@@ -1,0 +1,70 @@
+.loader {
+  animation-duration: 500ms;
+  animation-delay: 3s;
+  animation-name: loader__container;
+  animation-fill-mode: forwards;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  .progress {
+    .progress--item {
+      width: 180px;
+      animation: loader__item 4s infinite;
+    }
+    h1 {
+      .progress--item__letter {
+        animation-duration: 1s;
+        animation-name: loader__letter;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+      }
+      @for $i from 1 through 10 {
+        .progress--item__letter:nth-child(#{$i}) {
+          animation-delay: $i * 150ms;
+        }
+      }
+    }
+  }
+}
+
+@keyframes loader__item {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader__container {
+  from {
+    display: flex;
+  }
+
+  to {
+    display: none;
+  }
+}
+
+@keyframes loader__letter {
+  from {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.2em;
+  }
+}
