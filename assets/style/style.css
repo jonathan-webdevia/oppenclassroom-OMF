@@ -44,6 +44,12 @@
   flex-direction: column;
   color: white;
 }
+.loader .progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .loader .progress .progress--item {
   width: 180px;
   animation: loader__item 4s infinite;
@@ -95,10 +101,10 @@
 }
 @keyframes loader__container {
   from {
-    display: flex;
+    z-index: 1000;
   }
   to {
-    display: none;
+    z-index: -1000;
   }
 }
 @keyframes loader__letter {

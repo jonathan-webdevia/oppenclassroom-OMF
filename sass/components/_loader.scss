@@ -15,6 +15,10 @@
   flex-direction: column;
   color: white;
   .progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .progress--item {
       width: 180px;
       animation: loader__item 4s infinite;
@@ -47,11 +51,11 @@
 
 @keyframes loader__container {
   from {
-    display: flex;
+    z-index: 1000;
   }
 
   to {
-    display: none;
+    z-index: -1000;
   }
 }
 
