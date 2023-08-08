@@ -102,9 +102,11 @@
 @keyframes loader__container {
   from {
     z-index: 1000;
+    opacity: 1;
   }
   to {
     z-index: -1000;
+    opacity: 0;
   }
 }
 @keyframes loader__letter {
