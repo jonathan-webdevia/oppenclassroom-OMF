@@ -135,6 +135,8 @@ header .header {
 header .header .header__return {
   position: absolute;
   left: 20px;
+  font-size: 1.3em;
+  cursor: pointer;
 }
 header .header .header__title {
   font-family: Shrikhand;
@@ -173,6 +175,7 @@ section#exploration p {
 *******************************************/
 #functionment {
   padding: 20px;
+  background-color: white;
 }
 #functionment .functionment__menu {
   display: flex;
@@ -238,7 +241,6 @@ section#exploration p {
 **           RESTAURANTS                  **
 *******************************************/
 #restaurants {
-  margin-top: 20px;
   padding: 30px;
   background-color: #F6F6F6;
 }
@@ -310,6 +312,131 @@ section#exploration p {
 }
 .restaurants__cards .restaurant__card--description input[type=checkbox]:not(:checked) + label.hearth--bg {
   opacity: 0;
+  transition: 500ms;
+}
+
+#restaurant__img img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  margin: 0;
+}
+
+#restaurant__menu .restaurant__menu--description {
+  background-color: white;
+  border-radius: 60px;
+  position: relative;
+  bottom: 60px;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#restaurant__menu .restaurant__menu--description h1 {
+  margin: 0;
+  font-family: "Shrikhand";
+}
+#restaurant__menu .restaurant__menu--description input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+}
+#restaurant__menu .restaurant__menu--description label {
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  transition: 500ms;
+}
+#restaurant__menu .restaurant__menu--description label.hearth--bg {
+  opacity: 0;
+  cursor: pointer;
+}
+#restaurant__menu .restaurant__menu--description label.hearth--noBg {
+  opacity: 1;
+  cursor: pointer;
+}
+#restaurant__menu .restaurant__menu--description input[type=checkbox]:checked + label.hearth--bg {
+  opacity: 1;
+  transition: 500ms;
+}
+#restaurant__menu .restaurant__menu--description input[type=checkbox]:checked ~ label.hearth--noBg {
+  opacity: 0;
+  transition: 500ms;
+}
+#restaurant__menu .restaurant__menu--description input[type=checkbox]:not(:checked) ~ label.hearth--noBbg {
+  opacity: 1;
+  transition: 500ms;
+}
+#restaurant__menu .restaurant__menu--description input[type=checkbox]:not(:checked) + label.hearth--bg {
+  opacity: 0;
+  transition: 500ms;
+}
+#restaurant__menu .subMenu {
+  position: relative;
+  bottom: 60px;
+  padding: 15px;
+}
+#restaurant__menu .subMenu .__title {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+#restaurant__menu .subMenu .__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 3px;
+  background-color: #99E2D0;
+}
+#restaurant__menu .subMenu .__items .__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 110px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#restaurant__menu .subMenu .__items .__item .__description {
+  width: 100%;
+  padding: 0 20px;
+}
+#restaurant__menu .subMenu .__items .__item .__description p {
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#restaurant__menu .subMenu .__items .__item .__description p .price {
+  font-weight: bold;
+}
+#restaurant__menu .subMenu .__items .__item .validate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  width: 0;
+  height: calc(100% + 10px);
+  background-color: #99E2D0;
+  transition: 500ms;
+  overflow: hidden;
+}
+#restaurant__menu .subMenu .__items input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+}
+#restaurant__menu .subMenu .__items input[type=checkbox]:checked + .validate {
+  width: 200px;
+  transition: 500ms;
+}
+#restaurant__menu .subMenu .__items input[type=checkbox]:not(:checked) + .validate {
+  width: 0px;
   transition: 500ms;
 }
 
