@@ -29,4 +29,11 @@ header {
       margin-left: 10px;
     }
   }
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: red;
+  }
 }
