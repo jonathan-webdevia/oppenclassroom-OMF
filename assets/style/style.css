@@ -1,5 +1,6 @@
 .button {
   cursor: pointer;
+  /** Enlightenment **/
 }
 .button.__linear {
   padding: 13px 18px;
@@ -35,6 +36,7 @@
   font-family: Roboto;
   src: url(../../assets/files/googleFont/Roboto-Regular.ttf);
 }
+/** Center alignment **/
 @keyframes itemJump {
   0% {
     opacity: 0;
@@ -387,7 +389,7 @@ body {
     justify-content: center;
   }
 }
-#restaurant__menu .restaurant__menu--description h1 {
+#restaurant__menu .restaurant__menu--description h2 {
   font-size: 26px;
   margin: 0;
   font-family: "Shrikhand";
@@ -522,16 +524,13 @@ body {
   color: white;
   transition: 500ms;
 }
-#restaurant__menu .subMenu .__items .__item input[type=checkbox].__checker {
-  width: 0;
-}
-#restaurant__menu .subMenu .__items .__item input[type=checkbox].__checker:checked + .__description {
-  width: calc(100% - 70px);
-  transition: 500ms;
-}
-#restaurant__menu .subMenu .__items .__item input[type=checkbox].__checker:checked ~ .__check {
+#restaurant__menu .subMenu .__items .__item:hover .__check {
   width: 70px;
   opacity: 1;
+  transition: 500ms;
+}
+#restaurant__menu .subMenu .__items .__item:hover .__description {
+  width: calc(100% - 70px);
   transition: 500ms;
 }
 #restaurant__menu .subMenu .__items .delay-0 {
@@ -584,6 +583,12 @@ body {
 }
 #restaurant__menu .subMenu .__items .delay-8 {
   animation-delay: calc(8 * 250ms);
+  animation-duration: 500ms;
+  animation-name: itemJump;
+  animation-fill-mode: forwards;
+}
+#restaurant__menu .subMenu .__items .delay-9 {
+  animation-delay: calc(9 * 250ms);
   animation-duration: 500ms;
   animation-name: itemJump;
   animation-fill-mode: forwards;
