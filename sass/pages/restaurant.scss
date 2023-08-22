@@ -62,26 +62,26 @@ body {
       top: 0;
       right: 0;
       cursor: pointer;
-      transition: 500ms;
+      transition: 1000ms;
       @media screen and (max-width: 991px) {
         margin-right: 20px;
       }
     }
     input[type="checkbox"]:checked + label.hearth--bg {
       opacity: 1;
-      transition: 500ms;
+      transition: 1000ms;
     }
     input[type="checkbox"]:checked ~ label.hearth--noBg {
       opacity: 0;
-      transition: 500ms;
+      transition: 1000ms;
     }
     input[type="checkbox"]:not(:checked) ~ label.hearth--noBbg {
       opacity: 1;
-      transition: 500ms;
+      transition: 1000ms;
     }
     input[type="checkbox"]:not(:checked) + label.hearth--bg {
       opacity: 0;
-      transition: 500ms;
+      transition: 1000ms;
     }
   }
   .subMenu {

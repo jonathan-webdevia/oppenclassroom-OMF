@@ -137,7 +137,7 @@
     opacity: 1;
   }
   to {
-    opacity: 0.2em;
+    opacity: 0.2;
   }
 }
 body {
@@ -318,7 +318,7 @@ section#exploration p {
   position: absolute;
   cursor: pointer;
   right: 30px;
-  transition: 500ms;
+  transition: 1000ms;
 }
 .restaurants__cards .restaurant__card--description label.hearth--bg {
   opacity: 0;
@@ -330,19 +330,19 @@ section#exploration p {
 }
 .restaurants__cards .restaurant__card--description input[type=checkbox]:checked + label.hearth--bg {
   opacity: 1;
-  transition: 500ms;
+  transition: 1000ms;
 }
 .restaurants__cards .restaurant__card--description input[type=checkbox]:checked ~ label.hearth--noBg {
   opacity: 0;
-  transition: 500ms;
+  transition: 1000ms;
 }
 .restaurants__cards .restaurant__card--description input[type=checkbox]:not(:checked) ~ label.hearth--noBbg {
   opacity: 1;
-  transition: 500ms;
+  transition: 1000ms;
 }
 .restaurants__cards .restaurant__card--description input[type=checkbox]:not(:checked) + label.hearth--bg {
   opacity: 0;
-  transition: 500ms;
+  transition: 1000ms;
 }
 
 body {
@@ -407,7 +407,7 @@ body {
   top: 0;
   right: 0;
   cursor: pointer;
-  transition: 500ms;
+  transition: 1000ms;
 }
 #restaurant__menu .restaurant__menu--description label.hearth--bg {
   opacity: 0;
@@ -424,19 +424,19 @@ body {
 }
 #restaurant__menu .restaurant__menu--description input[type=checkbox]:checked + label.hearth--bg {
   opacity: 1;
-  transition: 500ms;
+  transition: 1000ms;
 }
 #restaurant__menu .restaurant__menu--description input[type=checkbox]:checked ~ label.hearth--noBg {
   opacity: 0;
-  transition: 500ms;
+  transition: 1000ms;
 }
 #restaurant__menu .restaurant__menu--description input[type=checkbox]:not(:checked) ~ label.hearth--noBbg {
   opacity: 1;
-  transition: 500ms;
+  transition: 1000ms;
 }
 #restaurant__menu .restaurant__menu--description input[type=checkbox]:not(:checked) + label.hearth--bg {
   opacity: 0;
-  transition: 500ms;
+  transition: 1000ms;
 }
 #restaurant__menu .subMenu {
   z-index: 1000;
@@ -624,6 +624,10 @@ footer ul {
 }
 footer ul li {
   margin-top: 10px;
+}
+footer a {
+  text-decoration: none !important;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
