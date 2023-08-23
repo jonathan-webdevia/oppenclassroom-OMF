@@ -449,6 +449,11 @@ body {
     padding: 0 10%;
   }
 }
+@media screen and (max-width: 992px) {
+  #restaurant__menu .subMenu {
+    margin-top: 0;
+  }
+}
 #restaurant__menu .subMenu.dessert {
   padding-bottom: 0;
 }
