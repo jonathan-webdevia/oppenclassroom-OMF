@@ -361,22 +361,6 @@ section#exploration p {
 .restaurants__cards .restaurant__card--description label.home {
   right: 30px;
 }
-.restaurants__cards .restaurant__card--description input[type=checkbox]:checked + label.hearth--bg {
-  opacity: 1;
-  transition: 1000ms;
-}
-.restaurants__cards .restaurant__card--description input[type=checkbox]:checked ~ label.hearth--noBg {
-  opacity: 0;
-  transition: 1000ms;
-}
-.restaurants__cards .restaurant__card--description input[type=checkbox]:not(:checked) ~ label.hearth--noBbg {
-  opacity: 1;
-  transition: 1000ms;
-}
-.restaurants__cards .restaurant__card--description input[type=checkbox]:not(:checked) + label.hearth--bg {
-  opacity: 0;
-  transition: 1000ms;
-}
 
 body {
   width: 100vw;
@@ -431,7 +415,7 @@ body {
   position: relative;
   margin-left: 30px;
 }
-#restaurant__menu .restaurant__menu--description label {
+#restaurant__menu .restaurant__menu--description label.restaurant {
   top: 0;
   right: 0;
 }
