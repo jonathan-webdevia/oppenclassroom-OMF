@@ -114,5 +114,28 @@ section#exploration {
       margin: 10px 0;
       font-size: 1.2em;
     }
+    input[type="checkbox"] {
+      opacity: 0;
+      width: 0;
+    }
+    label.home {
+      right: 30px;
+    }
+    input[type="checkbox"]:checked + label.hearth--bg {
+      opacity: 1;
+      transition: 1000ms;
+    }
+    input[type="checkbox"]:checked ~ label.hearth--noBg {
+      opacity: 0;
+      transition: 1000ms;
+    }
+    input[type="checkbox"]:not(:checked) ~ label.hearth--noBbg {
+      opacity: 1;
+      transition: 1000ms;
+    }
+    input[type="checkbox"]:not(:checked) + label.hearth--bg {
+      opacity: 0;
+      transition: 1000ms;
+    }
   }
 }

@@ -147,8 +147,6 @@ input[type=checkbox] {
 
 label {
   position: absolute;
-  top: 0;
-  right: 0;
   cursor: pointer;
   transition: 1000ms;
 }
@@ -356,6 +354,29 @@ section#exploration p {
   margin: 10px 0;
   font-size: 1.2em;
 }
+.restaurants__cards .restaurant__card--description input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+}
+.restaurants__cards .restaurant__card--description label.home {
+  right: 30px;
+}
+.restaurants__cards .restaurant__card--description input[type=checkbox]:checked + label.hearth--bg {
+  opacity: 1;
+  transition: 1000ms;
+}
+.restaurants__cards .restaurant__card--description input[type=checkbox]:checked ~ label.hearth--noBg {
+  opacity: 0;
+  transition: 1000ms;
+}
+.restaurants__cards .restaurant__card--description input[type=checkbox]:not(:checked) ~ label.hearth--noBbg {
+  opacity: 1;
+  transition: 1000ms;
+}
+.restaurants__cards .restaurant__card--description input[type=checkbox]:not(:checked) + label.hearth--bg {
+  opacity: 0;
+  transition: 1000ms;
+}
 
 body {
   width: 100vw;
@@ -409,6 +430,10 @@ body {
 #restaurant__menu .restaurant__menu--description .hearthContainer {
   position: relative;
   margin-left: 30px;
+}
+#restaurant__menu .restaurant__menu--description label {
+  top: 0;
+  right: 0;
 }
 #restaurant__menu .subMenu {
   z-index: 1000;
