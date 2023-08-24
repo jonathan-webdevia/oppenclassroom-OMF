@@ -114,39 +114,5 @@ section#exploration {
       margin: 10px 0;
       font-size: 1.2em;
     }
-    input[type="checkbox"] {
-      opacity: 0;
-      width: 0;
-    }
-    label {
-      &.hearth--bg {
-        opacity: 0;
-        cursor: pointer;
-      }
-      &.hearth--noBg {
-        opacity: 1;
-        cursor: pointer;
-      }
-      position: absolute;
-      cursor: pointer;
-      right: 30px;
-      transition: 1000ms;
-    }
-    input[type="checkbox"]:checked + label.hearth--bg {
-      opacity: 1;
-      transition: 1000ms;
-    }
-    input[type="checkbox"]:checked ~ label.hearth--noBg {
-      opacity: 0;
-      transition: 1000ms;
-    }
-    input[type="checkbox"]:not(:checked) ~ label.hearth--noBbg {
-      opacity: 1;
-      transition: 1000ms;
-    }
-    input[type="checkbox"]:not(:checked) + label.hearth--bg {
-      opacity: 0;
-      transition: 1000ms;
-    }
   }
 }
