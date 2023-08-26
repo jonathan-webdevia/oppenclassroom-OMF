@@ -362,6 +362,12 @@ section#exploration p {
   right: 30px;
 }
 
+@media screen and (max-width: 1000px) {
+  .restaurants__cards .restaurant__card--description label.home {
+    right: 0px;
+  }
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
